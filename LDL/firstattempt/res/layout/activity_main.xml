@@ -1,0 +1,74 @@
+<!-- <?xml version="1.0" encoding="utf-8"?> -->
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!-- xmlns:tools="http://schemas.android.com/tools" -->
+<!-- android:layout_width="match_parent" -->
+<!-- android:layout_height="match_parent" -->
+<!-- android:orientation="vertical" > -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <!--
+          <EditText android:id="@+id/edit_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_message" />
+        -->
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="stencil"
+            android:paddingBottom="50dp"
+            android:paddingTop="100dp"
+            android:text="@string/title_name"
+            android:textSize="30.0sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/pick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:onClick="chooseImage"
+            android:text="@string/button_choose_image" />
+
+        <Button
+            android:id="@+id/take"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pick"
+            android:layout_marginBottom="25dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="activateCamera"
+            android:text="@string/button_activate_camera" />
+        
+<!--         <Button
+            android:id="@+id/gps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/take"
+            android:layout_centerHorizontal="true"
+            android:onClick="getGPS"
+            android:text="@string/gps_button_text" /> -->
+
+        <!--
+              <ImageView
+    android:id="@+id/sample_image_display"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:contentDescription="@string/image_displayed" />
+        -->
+    </RelativeLayout>
+
+</ScrollView>

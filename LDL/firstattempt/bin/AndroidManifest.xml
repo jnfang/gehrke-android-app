@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jingwei.mac.firstattempt"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme" >
+        <activity
+            android:name="jingwei.mac.firstattempt.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="jingwei.mac.firstattempt.DisplayMessageActivity"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName="edu.dartmouth.cs.myfirstapp.MainActivity" >
+        </activity>
+        <activity
+            android:name="jingwei.mac.firstattempt.ImagePickActivity"
+            android:label="@string/title_activity_image_pick" >
+        </activity>
+        <activity
+            android:name="jingwei.mac.firstattempt.DisplayImageActivity"
+            android:label="@string/title_activity_display_image" >
+        </activity>
+        <activity
+            android:name="jingwei.mac.firstattempt.ShowResultsActivity"
+            android:label="@string/title_activity_show_results" >
+        </activity>
+        <activity
+            android:name="jingwei.mac.firstattempt.TasksSample"
+            android:label="@string/title_tasks_sample" >
+            <intent-filter>
+
+                <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+                <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="jingwei.mac.firstattempt.GPSActivity"
+            android:label="@string/title_activity_gps" >
+        </activity>
+        <activity
+            android:name="jingwei.mac.firstattempt.ResultsActivity"
+            android:label="@string/title_activity_results" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,52 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/image_display"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/image_displayed" />
+
+        <SeekBar
+            android:id="@+id/seek"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_display"
+            android:layout_margin="10dp"
+            android:progress="20"
+            android:secondaryProgress="20" />
+
+<!--         <SeekBar
+            android:id="@+id/square_ratio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seek"
+            android:layout_margin="10dp"
+            android:progress="20"
+            android:secondaryProgress="20" /> -->
+
+        <Button
+            android:id="@+id/analyze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seek"
+            android:layout_centerHorizontal="true"
+            android:onClick="analyzeImage"
+            android:text="@string/analyze_image" />
+
+        <TextView
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/analyze"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</ScrollView>

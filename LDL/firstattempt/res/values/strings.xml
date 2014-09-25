@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DIY Diagnostics</string>
+    <string name="action_settings">Settings</string>
+    <string name="edit_message">Input words here</string>
+    <string name="button_send">Click to send</string>
+    <string name="title_activity_display_message">DisplayMessageActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_image_pick">ImagePickActivity</string>
+    <string name="picker">Pick an image</string>
+    <string name="image_picked">Image picked: </string>
+    <string name="button_choose_image">Choose an Image</string>
+    <string name="button_activate_camera">Take Photo</string>
+    <string name="title_name">RAPID DIAGNOSIS</string>
+    <string name="title_activity_display_image">DisplayImageActivity</string>
+    <string name="image_displayed">image picked or taken</string>
+    <string name="analyze_image">Analyze this Image</string>
+    <string name="title_activity_show_results">ShowResultsActivity</string>
+    <string name="analysis_results">results of analysis</string>
+    <string name="pos_Button">positive control</string>
+    <string name="neg_Button">negative control</string>
+    <string name="test_Button">test result</string>
+    <string name="goToText_Button">View Results</string>
+    <string name="title_activity_fusion_table">FusionTableActivity</string>
+    <string name="accounts">Accounts</string>
+    <string name="icon_desc">Application icon</string>
+    <string name="title_separator_desc">Title separator</string>
+    <string name="refresh">Refresh</string>
+    <string name="error">Error</string>
+    <string name="error_format">[Error] %s</string>
+    <string name="title_tasks_sample">Task Sample</string>
+    <string name="markers_not_found_message">Image cannot be analyzed, please try again.</string>
+    <string name="gps_button_text">GPS</string>
+    <string name="title_activity_gps">GPSActivity</string>
+    <string name="gps_text">gps info</string>
+    <string name="connection_button_text">get connection</string>
+    <string name="title_activity_results">ResultsActivity</string>
+
+</resources>

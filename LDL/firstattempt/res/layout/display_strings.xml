@@ -1,0 +1,53 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/pos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="setPosString"
+            android:text="@string/pos_Button" />
+
+        <Button
+            android:id="@+id/neg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pos"
+            android:layout_centerHorizontal="true"
+            android:onClick="setNegString"
+            android:text="@string/neg_Button" />
+
+        <Button
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/neg"
+            android:layout_centerHorizontal="true"
+            android:onClick="setTestString"
+            android:text="@string/test_Button" />
+
+        <TextView
+            android:id="@+id/text_results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/test"
+            android:layout_centerHorizontal="true" />
+        
+            <Button
+            android:id="@+id/gps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_results"
+            android:layout_centerHorizontal="true"
+            android:onClick="getGPS"
+            android:text="@string/gps_button_text" />
+    </RelativeLayout>
+
+</ScrollView>
